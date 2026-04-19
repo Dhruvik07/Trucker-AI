@@ -1,0 +1,41 @@
+{
+    "drivers": [
+        { "id": "d1", "name": "John Doe", "specialty": "Long-haul", "hos_remaining": 8.5, "status": "AVAILABLE", "rating": 4.8 },
+        { "id": "d2", "name": "Jane Smith", "specialty": "Hazmat", "hos_remaining": 4.2, "status": "AVAILABLE", "rating": 4.9 },
+        { "id": "d3", "name": "Mike Johnson", "specialty": "Refrigerated", "hos_remaining": 11, "status": "AVAILABLE", "rating": 4.5 },
+        { "id": "d4", "name": "Sarah Davis", "specialty": "Flatbed", "hos_remaining": 1.5, "status": "ON_BREAK", "rating": 4.2 },
+        { "id": "d5", "name": "Alex Vance", "specialty": "Heavy Haul", "hos_remaining": 6.5, "status": "AVAILABLE", "rating": 4.3 },
+        { "id": "d6", "name": "Marcus Wright", "specialty": "Long-haul", "hos_remaining": 9.2, "status": "AVAILABLE", "rating": 4.7 },
+        { "id": "d7", "name": "David Chen", "specialty": "Regional", "hos_remaining": 2.1, "status": "AVAILABLE", "rating": 4.1 },
+        { "id": "d8", "name": "Emily Ross", "specialty": "Dry Van", "hos_remaining": 12, "status": "AVAILABLE", "rating": 5 },
+        { "id": "d9", "name": "Carlos Gomez", "specialty": "Refrigerated", "hos_remaining": 5.4, "status": "ON_BREAK", "rating": 4.4 },
+        { "id": "d10", "name": "Priya Patel", "specialty": "Hazmat", "hos_remaining": 7.8, "status": "AVAILABLE", "rating": 4.6 },
+        { "id": "d11", "name": "Elena Rodriguez", "specialty": "Dry Van", "hos_remaining": 10.5, "status": "AVAILABLE", "rating": 4.8 },
+        { "id": "d12", "name": "James Sullivan", "specialty": "Flatbed", "hos_remaining": 3.4, "status": "AVAILABLE", "rating": 4.6 }
+    ],
+    "trucks": [
+        { "id": "t1", "driver_id": "d1", "lat": 33.4255, "lng": -111.94, "speed": 45, "condition": "GOOD" },
+        { "id": "t2", "driver_id": "d2", "lat": 33.45, "lng": -112, "speed": 0, "condition": "NEEDS_MAINTENANCE" },
+        { "id": "t3", "driver_id": "d3", "lat": 33.39, "lng": -111.88, "speed": 60, "condition": "GOOD" },
+        { "id": "t4", "driver_id": "d4", "lat": 33.41, "lng": -111.91, "speed": 0, "condition": "GOOD" },
+        { "id": "t5", "driver_id": "d5", "lat": 33.435, "lng": -111.96, "speed": 55, "condition": "GOOD" },
+        { "id": "t6", "driver_id": "d6", "lat": 33.38, "lng": -111.92, "speed": 65, "condition": "GOOD" },
+        { "id": "t7", "driver_id": "d7", "lat": 33.445, "lng": -111.98, "speed": 35, "condition": "FAIR" },
+        { "id": "t8", "driver_id": "d8", "lat": 33.4, "lng": -111.9, "speed": 50, "condition": "GOOD" },
+        { "id": "t9", "driver_id": "d9", "lat": 33.46, "lng": -112.02, "speed": 0, "condition": "GOOD" },
+        { "id": "t10", "driver_id": "d10", "lat": 33.42, "lng": -111.95, "speed": 40, "condition": "GOOD" },
+        { "id": "t11", "driver_id": "d11", "lat": 33.415, "lng": -111.945, "speed": 52, "condition": "GOOD" },
+        { "id": "t12", "driver_id": "d12", "lat": 33.43, "lng": -111.93, "speed": 48, "condition": "FAIR" }
+    ],
+    "loads": [
+        { "id": "L1", "origin": "Tempe Logistics Hub", "destination": "Phoenix Downtown", "requirements": "Standard", "status": "PENDING" },
+        { "id": "L2", "origin": "Scottsdale Depot", "destination": "Chandler Warehouse", "requirements": "Refrigerated", "status": "PENDING" },
+        { "id": "L3", "origin": "Mesa Industrial", "destination": "Glendale Hub", "requirements": "Hazmat", "status": "PENDING" },
+        { "id": "L4", "origin": "Phoenix Sky Harbor", "destination": "Tempe Marketplace", "requirements": "Standard", "status": "PENDING" },
+        { "id": "L5", "origin": "Casa Grande Facility", "destination": "Tempe Logistics Hub", "requirements": "Heavy Haul", "status": "PENDING" }
+    ],
+    "trips": [],
+    "alerts": [],
+    "fuelPrice": 3.85,
+    "truckMpg": 6.5
+}

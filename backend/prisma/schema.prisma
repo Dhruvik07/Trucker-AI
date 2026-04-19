@@ -1,0 +1,51 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Trucker {
+  id                    String   @id
+  name                  String
+  hosRemaining          Float
+  status                String
+  specialties           String   // Comma separated
+  rating                Float
+  maxDistancePreference Int
+  isVeteran             Boolean  @default(false)
+  currentLat            Float?
+  currentLng            Float?
+  
+  vehicleId             String?
+  vehicle               Vehicle? @relation(fields: [vehicleId], references: [id])
+}
+
+model Vehicle {
+  id      String    @id
+  Trucker Trucker[]
+}
+
+model Alert {
+  id        String   @id
+  type      String
+  severity  String
+  message   String
+  timestamp DateTime @default(now())
+  driver    String
+}
+
+model Order {
+  id                String   @id @default(uuid())
+  pickupLat         Float
+  pickupLng         Float
+  destLat           Float
+  destLng           Float
+  status            String   
+  priority          String   
+  assignedTruckerId String?
+  amount            Float?
+  createdAt         DateTime @default(now())
+}
